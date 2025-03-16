@@ -46,6 +46,7 @@ spec:
     topic.name.outofstocks: STOCK.NOSTOCK.AVRO
     topic.name.returnrequests: PRODUCT.RETURNS.AVRO
     topic.name.productreviews: PRODUCT.REVIEWS.AVRO
+    topic.name.transactions: TRANSACTIONS.AVRO
 
     timings.ms.badgeins: 60000
 

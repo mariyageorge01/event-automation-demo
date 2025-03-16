@@ -1,0 +1,17 @@
+{
+  "type": "kafka",
+  "name": "transactions",
+  "contact": "kevin@loosehangers.com",
+  "description": "The events contain the transactions done by the customers.",
+  "tags": ["transactions", "avro"],
+  "encoding": "avro/binary",
+  "sampleMessages": [],
+  "schema": {
+    "type": "avro",
+    "content": "{\n  \"namespace\": \"com.loosehangerjeans\",\n  \"type\": \"record\",\n  \"name\": \"Transaction\",\n  \"fields\": [\n    {\n      \"name\": \"id\",\n      \"type\": \"string\",\n      \"doc\": \"unique identifier for the transaction\"\n    },\n    {\n      \"name\": \"state\",\n      \"type\": \"string\",\n      \"doc\": \"state of the transaction\"\n    },\n    {\n      \"name\": \"amount\",\n      \"type\": \"double\",\n      \"doc\": \"amount processed in this transaction\"\n    },\n    {\n      \"name\": \"timestamp\",\n      \"type\": \"string\",\n      \"doc\": \"datetime the reading was captured (UTC time in ISO 8601 format)\"\n    }\n  ]\n}\n"
+  },
+  "clusterId": "CLUSTERID",
+  "topic": {
+    "name": "TRANSACTIONS.AVRO"
+  }
+}
