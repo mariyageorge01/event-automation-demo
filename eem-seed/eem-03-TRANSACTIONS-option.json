@@ -1,6 +1,6 @@
 {
   "eventSourceId": "EVENTSOURCEID",
-  "alias": "TRANSACTIONS.AVRO",
+  "alias": "TRANSACTIONS",
   "name": "Self service",
   "controls": [],
   "hidden": false,
